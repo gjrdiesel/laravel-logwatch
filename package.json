@@ -1,7 +1,7 @@
 {
-  "name": "logwatch",
+  "name": "laravel-logwatch",
   "version": "0.1.0",
-  "description": "",
+  "description": "manage the laravel.log with ease",
   "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,12 +11,21 @@
     "logwatch": "bin/logwatch.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "gjrdiesel",
   "license": "ISC",
   "dependencies": {
     "daemon": "^1.1.0",
     "express": "^4.14.0",
     "filewatcher": "^3.0.1",
     "node-notifier": "^4.6.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gjrdiesel/laravel-logwatch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gjrdiesel/laravel-logwatch/issues"
+  },
+  "homepage": "https://github.com/gjrdiesel/laravel-logwatch#readme"
 }
