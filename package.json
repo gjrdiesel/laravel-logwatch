@@ -1,0 +1,22 @@
+{
+  "name": "logwatch",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/index.js"
+  },
+  "bin": {
+    "logwatch": "bin/logwatch.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "daemon": "^1.1.0",
+    "express": "^4.14.0",
+    "filewatcher": "^3.0.1",
+    "node-notifier": "^4.6.1"
+  }
+}

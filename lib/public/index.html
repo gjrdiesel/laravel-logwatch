@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>logwatch</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+        <style media="screen">
+            body {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .navbar {
+                margin-bottom: 20px;
+            }
+            .floatbtn {
+                float:right
+            }
+            pre {
+                font-size: 12px;
+                height: 400px;
+                width: 100%;
+            }
+            pre.is-fullscreen {
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+
+
+            <div class="container-fluid">
+              <nav class="navbar navbar-light bg-faded">
+                <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"></button>
+                <div class="collapse navbar-toggleable-xs" id="navbar-header">
+                  <a class="navbar-brand" href="#" @click="viewLogs()">logwatch</a>
+                  <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#" @click="viewLogs()">Logs <span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                  <ul class="nav navbar-nav float-xs-right">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" @click="clearLogs()">clear logs</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav> <!-- /navbar -->
+
+              <appview></appview>
+
+            </div> <!-- /container -->
+
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28-csp/vue.js" charset="utf-8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.0.3/vue-resource.js" charset="utf-8"></script>
+        <script src="./app.js" charset="utf-8"></script>
+    </body>
+</html>
